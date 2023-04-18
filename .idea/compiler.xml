@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Eureka7002" />
+        <module name="RabbitMQConfig3366" />
+        <module name="Order80" />
+        <module name="PayHystrix8001" />
+        <module name="RabbitMQStream8801" />
+        <module name="Eureka7001" />
+        <module name="GateWay9527" />
+        <module name="ConfigClient3355" />
+        <module name="Dashboard9001" />
+        <module name="RabbitMQStreamConsumer8803" />
+        <module name="RabbitMQStreamConsumer8802" />
+        <module name="Config3344" />
+        <module name="OrderOpenFeign80" />
+        <module name="Commons" />
+        <module name="OrderConsul80" />
+        <module name="OrderHystrix80" />
+        <module name="Pay8002" />
+        <module name="Pay8001" />
+        <module name="Orderzk80" />
+        <module name="Pay8006" />
+        <module name="Pay8004" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="order80" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -1,0 +1,39 @@
+server:
+  port: 8803
+spring:
+  application:
+    name: cloud-stream-consumer
+
+  cloud:
+    stream:
+      binders:
+        defaultRabbit:
+          type: rabbit # 组件类型
+          environment:
+            spring:
+              rabbitmq: # 设置连接rabbitmq的参数
+                host: 192.168.157.130
+                port: 5672
+                username: root
+                password: 123456
+
+      bindings:
+        input:
+          destination: studyExchange # 交换机名称
+          content-type: application/json # 设置消息类型，如果是文本【text/plain】
+          binder: defaultRabbit # 设置需要绑定的消息服务的具体值
+          group: groupA
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka, http://eureka7002.com:7002/eureka
+  instance:
+    instance-id: receive-8803.com # 信息列表中的名称
+    prefer-ip-address: true # 访问路径变为ip地址
+
+management:
+  health:
+    rabbit:
+      enabled: false

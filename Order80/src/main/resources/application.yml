@@ -1,0 +1,20 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: cloud-order-service
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      probability: 1 # 0~1 1表示全采集 可以是0.5这样的数
+
+eureka:
+  client:
+    register-with-eureka: true # 表示注册进Eureka
+    fetch-registry: true #是否从Eureka抓取已有信息，默认为true，集群必须true，才能配合Ribbon使用负载均衡
+    service-url:
+      # defaultZone: http://localhost:7001/eureka # 写Eureka的地址 【单机版】
+      defaultZone: http://eureka7001.com:7001/eureka, http://eureka7002.com:7002/eureka
+

@@ -1,0 +1,21 @@
+# 项目排除路径
+/Commons/target/
+/Config3344/target/
+/ConfigClient3355/target/
+/Dashboard9001/target/
+/Eureka7001/target/
+/Eureka7002/target/
+/GateWay9527/target/
+/OrderConsul80/target/
+/OrderHystrix80/target/
+/OrderOpenFeign80/target/
+/Orderzk80/target/
+/Pay8001/target/
+/Pay8002/target/
+/Pay8004/target/
+/Pay8006/target/
+/PayHystrix8001/target/
+/RabbitMQConfig3366/target/
+/RabbitMQStream8801/target/
+/RabbitMQStreamConsumer8802/target/
+/RabbitMQStreamConsumer8803/target/
